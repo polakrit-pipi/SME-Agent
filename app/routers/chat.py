@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, BackgroundTasks
 from pydantic import BaseModel
 from langchain_core.messages import HumanMessage
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langfuse.callback import CallbackHandler
+from langfuse.langchain import CallbackHandler
 import time # เพิ่มโมดูลจับเวลา
 
 from app.dependencies import verify_shop, verify_jwt_auth
